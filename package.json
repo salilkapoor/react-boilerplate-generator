@@ -1,0 +1,21 @@
+{
+  "name": "react-boilerplate-generator",
+  "version": "1.0.0",
+  "description": "This app will generate a react-boilerplate to start your development.",
+  "main": "dist/index.js",
+  "scripts": {
+    "create": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salil Kapoor",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-dir": "^1.2.0",
+    "yargs": "^15.3.1"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chalk": "^4.0.0"
+  }
+}

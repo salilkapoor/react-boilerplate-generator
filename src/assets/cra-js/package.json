@@ -1,0 +1,60 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "React boilerplate for common code, configurations and CI/CD implementations.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --open --hot",
+    "storybook": "start-storybook",
+    "build": "webpack --config webpack.config.js",
+    "test": "npx jest --config ./config/jest.config.js --json --outputFile=.jest-test-results.json",
+    "test:snap": "yarn run test -u",
+    "test:watch": "yarn run test --watch --verbose",
+    "test:badges": "jest-coverage-badges --output './badges'",
+    "lint": "eslint src/",
+    "lint:prettier": "pretty-quick",
+    "commit": "npx git-cz"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
+  },
+  "dependencies": {
+    "@storybook/react": "^5.3.13",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-angular": "^8.3.4",
+    "@testing-library/react": "^10.0.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.0.7",
+    "jest": "^24.9.0",
+    "jest-coverage-badges": "^1.1.2",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scenario 1: Testing the initial sample code Unit Test 1: Should render component correctly 1`] = `ShallowWrapper {}`;
